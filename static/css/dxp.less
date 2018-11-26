@@ -35,6 +35,9 @@ a:hover,a:focus,a:invalid,a:link{
 .clearfix::after {
   clear: both;
 }
+html *{
+  box-sizing: border-box;
+}
 body{
   //footer高度
   //padding-bottom: 333px;
@@ -212,9 +215,12 @@ body{
   .font;
   background-color: @mainColor_bak;
   .page__bd{
+    @padding-lef_rig:35rem/75;
     .content{
-      @padding-lef_rig:35rem/75;
       padding: 0 10px;
+    }
+    //会员记录
+    .user_vip_privilege{
       .user-vip{
         padding: 20rem/75 @padding-lef_rig;
         background-color: #ffffff;
@@ -343,6 +349,298 @@ body{
             p{
               font-size: 22rem/75;
             }
+          }
+        }
+      }
+    }
+    //等级特权
+    .user_record{
+      .font;
+      .user-info{
+        position: relative;
+        padding: 45rem/75 @padding-lef_rig  15rem/75 @padding-lef_rig;
+        @img_wh:155rem/75;
+        background-color: white;
+        .user-photo{
+          .img-box{
+            width: @img_wh;
+            height: @img_wh;
+            border: 2px solid #ff880d;
+            border-radius: 50%;
+            img{
+              .wh100;
+            }
+          }
+        }
+        .user-details{
+          margin-left: @img_wh + 20rem/75;
+          .nick_name{
+            .title{
+              height: 85rem/75;
+              font-size: 36rem/75;
+              color: #ffa200;
+              line-height: 100rem/75;
+              overflow: hidden;
+            }
+            .title-tag{
+              position: absolute;
+              top: 15rem/75;
+              right: 0;
+              font-size: 24rem/75;
+              line-height: 50rem/75;
+              color: #ffffff;
+              padding: 0 25rem/75;
+              background-color: #f4d05d;
+              border-radius: 35rem/75;
+              border-top-right-radius: unset;
+              border-bottom-right-radius: unset;
+            }
+            .vip-level{
+              .icon-box{
+                position: relative;
+                width: 175rem/75;
+                height: 60rem/75;
+                img{
+                  .wh100;
+                }
+                .tit{
+                  position: absolute;
+                  width: 70%;
+                  top: 0;
+                  bottom: 0;
+                  right: 0;
+                  font-size: 24rem/75;
+                  color: #ffffff;
+                  line-height: 60rem/75;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+        .introduction{
+          margin-top: 80rem/75;
+          line-height: 95rem/75;
+          font-size: 30rem/75;
+          color: #000000;
+        }
+      }
+      .user-record{
+        background-color: white;
+        margin-top: 20rem/75;
+        .title{
+          padding: 0 @padding-lef_rig;
+          line-height: 80rem/75;
+          font-size: 30rem/75;
+          color: #000;
+          border-bottom: 1px solid #eeeeee;
+        }
+        .img-list{
+          padding-bottom: 15rem/75;
+          border-bottom: 1px solid #eeeeee;
+          ul{
+            @offset: 100%/6.35;
+            li{
+              display: block;
+              width: 100%;
+              margin: 15rem/75 0;
+              float: none;
+              .con{
+                padding: 0 20rem/75 0 10rem/75;
+                line-height: 50rem/75;
+                border: 1px solid #eeeeee;
+                border-radius: 35rem/75;
+                img{
+                  height: 30rem/75;
+                  margin: 10rem/75 10rem/75 0rem 0rem;
+                }
+                .tit{
+                  display: inline-block;
+                  font-size: 24rem/75;
+                  color: #999999;
+                }
+              }
+            }
+            li:active{
+              background-color: unset;
+            }
+            li.on{
+              .con{
+                background-color: #fff3e2;
+              }
+            }
+            //li:nth-child(1){
+            //  .con{
+            //    padding-right: @offset * 0;
+            //  }
+            //}
+            li:nth-child(2){
+              .con{
+                padding-right: @offset * 1;
+              }
+            }
+            li:nth-child(3){
+              .con{
+                padding-right: @offset * 2;
+              }
+            }
+            li:nth-child(4){
+              .con{
+                padding-right: @offset * 3;
+              }
+            }
+            li:nth-child(5){
+              .con{
+                padding-right: @offset * 4;
+              }
+            }
+            li:nth-child(6){
+              .con{
+                padding-right: @offset * 5;
+              }
+            }
+          }
+        }
+        .btn-group{
+          padding-bottom: 25rem/75;
+          .tit{
+            padding: 0 @padding-lef_rig;
+            line-height: 80rem/75;
+            font-size: 24rem/75;
+            color: #000000;
+          }
+          .btn-list{
+            padding: 0 45rem/75;
+            .btn-link{
+              padding: 0 50rem/75;
+              border-radius: 35rem/75;
+              display: inline-block;
+              line-height: 65rem/75;
+              font-size: 30rem/75;
+              color: white;
+              background-color: #ff8251;
+              img{
+                display: inline-block;
+                vertical-align: text-bottom;
+                height: 43rem/75;
+              }
+            }
+          }
+        }
+      }
+      .user-income{
+        margin-top: 20rem/75;
+        background-color: white;
+        .total{
+          padding: 0 @padding-lef_rig;
+          border-bottom: 1px solid #eeeeee;
+          padding-bottom: 15rem/75;
+          .icon-box{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 25rem/75;
+            width: 75rem/75;
+            height: 75rem/75;
+            img{
+              .wh100;
+            }
+          }
+          .words{
+            display: inline-block;
+            width: 80%;
+            font-size: 30rem/75;
+            line-height: 95rem/75;
+            color: #000000;
+            .data{
+              color: #fe2c00;
+              font-weight: bold;
+            }
+          }
+        }
+        .rank{
+          position: relative;
+          @height: 80rem/75;
+          @pd_tb:15rem/75;
+          height: 160rem/75;
+          padding: @pd_tb 0;
+          border: 1px solid #eeeeee;
+          border-left: 0;
+          border-right: 0;
+          .tit{
+            line-height: @height;
+            height: @height;
+            font-size: 30rem/75;
+            color: #000000;
+            overflow: hidden;
+          }
+          .line{
+            position: absolute;
+            top: @pd_tb;
+            left: 50%;
+            width: 1px;
+            height: 160rem/75 - @pd_tb * 2;
+            background-color: #eeeeee;
+          }
+          .percentage,.number{
+            padding: 0 @padding-lef_rig @height/4 @padding-lef_rig;
+            width: 50%;
+            text-align: center;
+            .f_l;
+          }
+          .percentage{
+            @radius: 35rem/75;
+            .tit{
+              margin-bottom: 20rem/75;
+            }
+            .icon-box{
+              height: 25rem/75;
+              border-radius: @radius;
+              background-color: #fff4d5;
+              i{
+                display: block;
+                width: 10%;
+                height: 100%;
+                background-color: #ffd668;
+                border-radius: @radius;
+              }
+            }
+          }
+          .number{
+            .word{
+              font-size: 30rem/75;
+              color: #ca7a2f;
+            }
+          }
+        }
+        #echart-box{
+          //padding: 0 10rem/75;
+          //height: 280rem/75;
+          //padding: 30rem/75 0;
+          canvas{
+            margin: 25rem/75 0!important;
+          }
+        }
+        .banner-box{
+          height: 335rem/75;
+          margin-top: 20rem/75;
+          img{
+            .wh100;
+            border-radius: 10rem/75;
+          }
+        }
+        .pay-box{
+          margin-top: 50rem/75;
+          line-height: 105rem/75;
+          background-color: #f19743;
+          padding: 0 70rem/75;
+          border-radius: 10rem/75;
+          .word{
+            font-size: 36rem/75;
+            color: #ffffff;
+          }
+          .iconfont{
+            color: white;
+            font-size: 2em;
           }
         }
       }

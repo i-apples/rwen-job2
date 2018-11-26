@@ -16,9 +16,47 @@
         }
     }
 
-   if( $('.page .page__bd .content .vip-privilege') ) {
+    if( $('.page .page__bd .content .vip-privilege') ) {
        updata_vip_privilege(8);
    }
 
+    var updata_user_record = function () {
+       var list = $('.page .page__bd .user_record .user-record .img-list li');
+       list.each(function () {
+           if( $(this).hasClass('on') ) {
+               var img = $(this).find('img');
+               var temp = img.attr('src');
+               img.attr('src',img.attr('data-src')).attr('data-src',temp);
+           }
+       })
+    };
 
+    if( $('.page .page__bd .user_record .user-record .img-list') ) {
+        updata_user_record();
+    }
+
+    function set_user_vip(inx){
+        /**
+         *  在这里调用接口获取用户的vip等级
+         *  默认是0级
+         *  ...
+         */
+
+        var index;
+        if( isNaN(index) || index < 0 ) {
+            index = 0;
+        }
+        index = inx;
+        //开始判断
+        var list = $('.page .page__bd .user_record .user-record .img-list li');
+        for ( var i = 0; i < index + 1; i++ ) {
+            var temp = $(list.get(list.length - 1 - i));
+            temp.addClass('on');
+        }
+        updata_user_record();
+    }
+    //设置vip等级
+    $('body').ready(function () {
+        set_user_vip(3);
+    })
 })();

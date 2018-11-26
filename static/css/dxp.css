@@ -13,6 +13,9 @@ a:link {
 .clearfix::after {
   clear: both;
 }
+html * {
+  box-sizing: border-box;
+}
 .mobile {
   display: none;
 }
@@ -168,19 +171,19 @@ a:link {
 .page .page__bd .content {
   padding: 0 10px;
 }
-.page .page__bd .content .user-vip {
+.page .page__bd .user_vip_privilege .user-vip {
   padding: 0.26666667rem 0.46666667rem;
   background-color: #ffffff;
 }
-.page .page__bd .content .user-vip .img-box {
+.page .page__bd .user_vip_privilege .user-vip .img-box {
   position: relative;
   width: 3.33333333rem;
   margin: 0 auto;
 }
-.page .page__bd .content .user-vip .img-box img {
+.page .page__bd .user_vip_privilege .user-vip .img-box img {
   height: 2.06666667rem;
 }
-.page .page__bd .content .user-vip .img-box .title {
+.page .page__bd .user_vip_privilege .user-vip .img-box .title {
   position: absolute;
   bottom: 0.46666667rem;
   left: 0;
@@ -189,15 +192,15 @@ a:link {
   color: #ffffff;
   text-align: center;
 }
-.page .page__bd .content .user-vip .list-words {
+.page .page__bd .user_vip_privilege .user-vip .list-words {
   margin-top: 0.53333333rem;
 }
-.page .page__bd .content .user-vip .list-words p {
+.page .page__bd .user_vip_privilege .user-vip .list-words p {
   color: #000000;
   font-size: 0.32rem;
   line-height: 0.58666667rem;
 }
-.page .page__bd .content .user-vip .list-words p:before {
+.page .page__bd .user_vip_privilege .user-vip .list-words p:before {
   content: '';
   display: inline-block;
   width: 0.26666667rem;
@@ -206,10 +209,10 @@ a:link {
   border-radius: 50%;
   margin-right: 0.13333333rem;
 }
-.page .page__bd .content .vip-buy {
+.page .page__bd .user_vip_privilege .vip-buy {
   padding: 0 0.46666667rem;
 }
-.page .page__bd .content .vip-buy .title {
+.page .page__bd .user_vip_privilege .vip-buy .title {
   font-size: 0.32rem;
   color: #000;
   line-height: 1.4rem;
@@ -217,66 +220,66 @@ a:link {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.page .page__bd .content .vip-buy .btn-group {
+.page .page__bd .user_vip_privilege .vip-buy .btn-group {
   padding: 0.26666667rem 0rem;
 }
-.page .page__bd .content .vip-buy .btn-group .weui-btn {
+.page .page__bd .user_vip_privilege .vip-buy .btn-group .weui-btn {
   font-size: 0.4rem;
   color: #ffffff;
   line-height: 0.86666667rem;
   background-color: #ff8251;
   border-radius: 0.46666667rem;
 }
-.page .page__bd .content .vip-buy .btn-group .btn-share {
+.page .page__bd .user_vip_privilege .vip-buy .btn-group .btn-share {
   opacity: 0.7;
   float: right;
   margin: 0;
 }
-.page .page__bd .content .vip-privilege .weui-grids .weui-grid__icon {
+.page .page__bd .user_vip_privilege .vip-privilege .weui-grids .weui-grid__icon {
   width: 1.33333333rem;
   height: auto;
 }
-.page .page__bd .content .vip-privilege .weui-grids .weui-grid__label {
+.page .page__bd .user_vip_privilege .vip-privilege .weui-grids .weui-grid__label {
   font-size: 0.32rem;
   color: #000000;
 }
-.page .page__bd .content .banner-box {
+.page .page__bd .user_vip_privilege .banner-box {
   margin: 0.26666667rem 0;
 }
-.page .page__bd .content .banner-box img {
+.page .page__bd .user_vip_privilege .banner-box img {
   width: 100%;
 }
-.page .page__bd .content .user-course {
+.page .page__bd .user_vip_privilege .user-course {
   padding: 0.33333333rem 0.46666667rem;
   background-color: white;
 }
-.page .page__bd .content .user-course .title img {
+.page .page__bd .user_vip_privilege .user-course .title img {
   display: inline-block;
   width: 0.6rem;
   vertical-align: text-bottom;
   margin-right: 0.26666667rem;
 }
-.page .page__bd .content .user-course .title span {
+.page .page__bd .user_vip_privilege .user-course .title span {
   line-height: 1.33333333rem;
   font-size: 0.4rem;
   color: #000;
 }
-.page .page__bd .content .user-course .list-words li {
+.page .page__bd .user_vip_privilege .user-course .list-words li {
   position: relative;
   margin-bottom: 0.46666667rem;
 }
-.page .page__bd .content .user-course .list-words li p {
+.page .page__bd .user_vip_privilege .user-course .list-words li p {
   font-size: 0.32rem;
   color: #000000;
   height: 1rem;
   overflow: hidden;
 }
-.page .page__bd .content .user-course .list-words .con-lef {
+.page .page__bd .user_vip_privilege .user-course .list-words .con-lef {
   width: 2.57333333rem;
   border-right: 1px solid #d9d9d9;
   float: left;
 }
-.page .page__bd .content .user-course .list-words .con-lef li:after {
+.page .page__bd .user_vip_privilege .user-course .list-words .con-lef li:after {
   content: '';
   position: absolute;
   right: -0.10666667rem;
@@ -286,10 +289,267 @@ a:link {
   background-color: #ff5817;
   border-radius: 50%;
 }
-.page .page__bd .content .user-course .list-words .con-rig {
+.page .page__bd .user_vip_privilege .user-course .list-words .con-rig {
   margin-left: 3.37333333rem;
 }
-.page .page__bd .content .user-course .list-words .con-rig p {
+.page .page__bd .user_vip_privilege .user-course .list-words .con-rig p {
   font-size: 0.29333333rem;
+}
+.page .page__bd .user_record {
+  font-family: "Microsoft YaHei";
+}
+.page .page__bd .user_record .user-info {
+  position: relative;
+  padding: 0.6rem 0.46666667rem 0.2rem 0.46666667rem;
+  background-color: white;
+}
+.page .page__bd .user_record .user-info .user-photo .img-box {
+  width: 2.06666667rem;
+  height: 2.06666667rem;
+  border: 2px solid #ff880d;
+  border-radius: 50%;
+}
+.page .page__bd .user_record .user-info .user-photo .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.page .page__bd .user_record .user-info .user-details {
+  margin-left: 2.33333333rem;
+}
+.page .page__bd .user_record .user-info .user-details .nick_name .title {
+  height: 1.13333333rem;
+  font-size: 0.48rem;
+  color: #ffa200;
+  line-height: 1.33333333rem;
+  overflow: hidden;
+}
+.page .page__bd .user_record .user-info .user-details .nick_name .title-tag {
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+  font-size: 0.32rem;
+  line-height: 0.66666667rem;
+  color: #ffffff;
+  padding: 0 0.33333333rem;
+  background-color: #f4d05d;
+  border-radius: 0.46666667rem;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+.page .page__bd .user_record .user-info .user-details .nick_name .vip-level .icon-box {
+  position: relative;
+  width: 2.33333333rem;
+  height: 0.8rem;
+}
+.page .page__bd .user_record .user-info .user-details .nick_name .vip-level .icon-box img {
+  width: 100%;
+  height: 100%;
+}
+.page .page__bd .user_record .user-info .user-details .nick_name .vip-level .icon-box .tit {
+  position: absolute;
+  width: 70%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 0.32rem;
+  color: #ffffff;
+  line-height: 0.8rem;
+  text-align: center;
+}
+.page .page__bd .user_record .user-info .introduction {
+  margin-top: 1.06666667rem;
+  line-height: 1.26666667rem;
+  font-size: 0.4rem;
+  color: #000000;
+}
+.page .page__bd .user_record .user-record {
+  background-color: white;
+  margin-top: 0.26666667rem;
+}
+.page .page__bd .user_record .user-record .title {
+  padding: 0 0.46666667rem;
+  line-height: 1.06666667rem;
+  font-size: 0.4rem;
+  color: #000;
+  border-bottom: 1px solid #eeeeee;
+}
+.page .page__bd .user_record .user-record .img-list {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.page .page__bd .user_record .user-record .img-list ul li {
+  display: block;
+  width: 100%;
+  margin: 0.2rem 0;
+  float: none;
+}
+.page .page__bd .user_record .user-record .img-list ul li .con {
+  padding: 0 0.26666667rem 0 0.13333333rem;
+  line-height: 0.66666667rem;
+  border: 1px solid #eeeeee;
+  border-radius: 0.46666667rem;
+}
+.page .page__bd .user_record .user-record .img-list ul li .con img {
+  height: 0.4rem;
+  margin: 0.13333333rem 0.13333333rem 0rem 0rem;
+}
+.page .page__bd .user_record .user-record .img-list ul li .con .tit {
+  display: inline-block;
+  font-size: 0.32rem;
+  color: #999999;
+}
+.page .page__bd .user_record .user-record .img-list ul li:active {
+  background-color: unset;
+}
+.page .page__bd .user_record .user-record .img-list ul li.on .con {
+  background-color: #fff3e2;
+}
+.page .page__bd .user_record .user-record .img-list ul li:nth-child(2) .con {
+  padding-right: 15.7480315%;
+}
+.page .page__bd .user_record .user-record .img-list ul li:nth-child(3) .con {
+  padding-right: 31.49606299%;
+}
+.page .page__bd .user_record .user-record .img-list ul li:nth-child(4) .con {
+  padding-right: 47.24409449%;
+}
+.page .page__bd .user_record .user-record .img-list ul li:nth-child(5) .con {
+  padding-right: 62.99212598%;
+}
+.page .page__bd .user_record .user-record .img-list ul li:nth-child(6) .con {
+  padding-right: 78.74015748%;
+}
+.page .page__bd .user_record .user-record .btn-group {
+  padding-bottom: 0.33333333rem;
+}
+.page .page__bd .user_record .user-record .btn-group .tit {
+  padding: 0 0.46666667rem;
+  line-height: 1.06666667rem;
+  font-size: 0.32rem;
+  color: #000000;
+}
+.page .page__bd .user_record .user-record .btn-group .btn-list {
+  padding: 0 0.6rem;
+}
+.page .page__bd .user_record .user-record .btn-group .btn-list .btn-link {
+  padding: 0 0.66666667rem;
+  border-radius: 0.46666667rem;
+  display: inline-block;
+  line-height: 0.86666667rem;
+  font-size: 0.4rem;
+  color: white;
+  background-color: #ff8251;
+}
+.page .page__bd .user_record .user-record .btn-group .btn-list .btn-link img {
+  display: inline-block;
+  vertical-align: text-bottom;
+  height: 0.57333333rem;
+}
+.page .page__bd .user_record .user-income {
+  margin-top: 0.26666667rem;
+  background-color: white;
+}
+.page .page__bd .user_record .user-income .total {
+  padding: 0 0.46666667rem;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.2rem;
+}
+.page .page__bd .user_record .user-income .total .icon-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.33333333rem;
+  width: 1rem;
+  height: 1rem;
+}
+.page .page__bd .user_record .user-income .total .icon-box img {
+  width: 100%;
+  height: 100%;
+}
+.page .page__bd .user_record .user-income .total .words {
+  display: inline-block;
+  width: 80%;
+  font-size: 0.4rem;
+  line-height: 1.26666667rem;
+  color: #000000;
+}
+.page .page__bd .user_record .user-income .total .words .data {
+  color: #fe2c00;
+  font-weight: bold;
+}
+.page .page__bd .user_record .user-income .rank {
+  position: relative;
+  height: 2.13333333rem;
+  padding: 0.2rem 0;
+  border: 1px solid #eeeeee;
+  border-left: 0;
+  border-right: 0;
+}
+.page .page__bd .user_record .user-income .rank .tit {
+  line-height: 1.06666667rem;
+  height: 1.06666667rem;
+  font-size: 0.4rem;
+  color: #000000;
+  overflow: hidden;
+}
+.page .page__bd .user_record .user-income .rank .line {
+  position: absolute;
+  top: 0.2rem;
+  left: 50%;
+  width: 1px;
+  height: 1.73333333rem;
+  background-color: #eeeeee;
+}
+.page .page__bd .user_record .user-income .rank .percentage,
+.page .page__bd .user_record .user-income .rank .number {
+  padding: 0 0.46666667rem 0.26666667rem 0.46666667rem;
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+.page .page__bd .user_record .user-income .rank .percentage .tit {
+  margin-bottom: 0.26666667rem;
+}
+.page .page__bd .user_record .user-income .rank .percentage .icon-box {
+  height: 0.33333333rem;
+  border-radius: 0.46666667rem;
+  background-color: #fff4d5;
+}
+.page .page__bd .user_record .user-income .rank .percentage .icon-box i {
+  display: block;
+  width: 10%;
+  height: 100%;
+  background-color: #ffd668;
+  border-radius: 0.46666667rem;
+}
+.page .page__bd .user_record .user-income .rank .number .word {
+  font-size: 0.4rem;
+  color: #ca7a2f;
+}
+.page .page__bd .user_record .user-income #echart-box canvas {
+  margin: 0.33333333rem 0 !important;
+}
+.page .page__bd .user_record .user-income .banner-box {
+  height: 4.46666667rem;
+  margin-top: 0.26666667rem;
+}
+.page .page__bd .user_record .user-income .banner-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.13333333rem;
+}
+.page .page__bd .user_record .user-income .pay-box {
+  margin-top: 0.66666667rem;
+  line-height: 1.4rem;
+  background-color: #f19743;
+  padding: 0 0.93333333rem;
+  border-radius: 0.13333333rem;
+}
+.page .page__bd .user_record .user-income .pay-box .word {
+  font-size: 0.48rem;
+  color: #ffffff;
+}
+.page .page__bd .user_record .user-income .pay-box .iconfont {
+  color: white;
+  font-size: 2em;
 }
 /*# sourceMappingURL=dxp.css.map */
