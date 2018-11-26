@@ -1,0 +1,46 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+ul, li, dt, dd, i, d {
+    list-style: none;
+}
+
+.controller {
+}
+
+.cls {
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+    background:#fff;
+}
+
+table {
+    border-collapse: collapse;
+  
+}
+
+
+input::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
+input::-moz-placeholder {
+    font-size: 12px;
+}
+
+input:-ms-input-placeholder {
+    font-size: 12px;
+}
+

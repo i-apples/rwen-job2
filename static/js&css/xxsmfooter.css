@@ -1,0 +1,88 @@
+﻿
+
+.bottom_part_bg {
+    height: 46px;
+}
+
+.bottom_part {
+   
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background: #3a3a3a;
+    z-index: 2;
+    padding:3px 0;
+}
+
+
+
+    .bottom_part td .img {
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
+    }
+
+    .bottom_part td a {
+        text-align: center;
+        display: block;
+        width: 40px;
+        margin: 0 auto;
+        font-size:12px;
+    
+        color:#fff;
+    }
+
+        .bottom_part td a.on {
+            color: #ee8225;
+        }
+
+    .bottom_part td .img1 {
+        background: url(../images/nomal_index.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .bottom_part td .img2 {
+        background: url(../images/xxsmall/index_33.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .bottom_part td .img3 {
+        background: url(../images/nomal_icon.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .bottom_part td .img4 {
+        background: url(../images/nomal_c2c.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .bottom_part td .img5 {
+        background: url(../images/nomal_us.png) no-repeat center center;
+        background-size: cover;
+    }
+
+
+
+
+      .bottom_part td a.on  .img1{
+           background: url(../images/onindex.png) no-repeat center center;
+        background-size: cover;
+        }
+       .bottom_part td a.on  .img2{
+           background: url(../images/xxsmall/index_1_33.jpg) no-repeat center center;
+        background-size: cover;
+        }
+        .bottom_part td a.on  .img3{
+           background: url(../images/onicon.png) no-repeat center center;
+        background-size: cover;
+        }
+         .bottom_part td a.on  .img4{
+           background: url(../images/onc2c.png) no-repeat center center;
+        background-size: cover;
+        }
+          .bottom_part td a.on  .img5{
+           background: url(../images/onus.png) no-repeat center center;
+        background-size: cover;
+        }
